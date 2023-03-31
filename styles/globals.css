@@ -1,3 +1,390 @@
-body{
+@charset "UTF-8";
+html {
+  font-size: 18px;
+}
+/* CSS Document */
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 1rem;
+  vertical-align: baseline;
+  background: transparent;
+  font-weight: normal;
+}
+
+body {
+  line-height: 1;
+  background-color: #e4e4e4;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+
+
+/* header */
+#head{
+  background-color: #fff;
+  margin-bottom: 15px;
+}
+header{
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+  
+}
+header>ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header>ul>li{
+  margin-left: 10px;
+}
+footer{
+  text-align: center;
+  line-height: 25px;
+}
+.small{
+  width: 1000px;
+  margin: 0 auto 15px;
+  background-color: #fff;
+}
+footer>p{
+  background-color: #cccccc;
+  text-align: center;
+  padding: 20px 0;
+}
+nav{
+  width: 1000px;
+  margin: 0 auto;
+  padding: 20px 0;
+  background-color: #fff;
+  margin-bottom: 15px;
+}
+nav>ul{
+  display: flex;
+  justify-content: center;
+}
+nav>ul>li{
+  margin-left: 50px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.castList{
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #fff;
+  padding: 20px 0;
+}
+.castList>p{
+  margin: 0 10px 5px;
+  text-align: center;
+  font-family: 'Hahmlet', serif;
+}
+.castList>p>a{
+  width: 200px;
+  display: block;
+  line-height: 20px;
+}
+.castListClick{
+  width: 940px;
+  margin: 0 auto 20px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 50px 30px;
+}
+.castListClickRight{
+  display: block;
+  width: 250px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+.castListForm{
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #fff;
+}
+.castListForm>form>button{
+  background-color: #fff;
+  border: none;
+}
+.bottom{
+  width: 950px;
+  margin: 0 auto 30px;
+  border: 5px solid #999;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.view{
+  margin-bottom: 30px;
+}
+.first{
+  background-color: rgb(74, 161, 243);
+  width: 200px; height: 50px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.first>a{
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+.home{
+  background-color: #555;
+  width: 200px; height: 50px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.home>a{
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+main{
+  margin-bottom: 20px;
+}
+#home{
+  width: 1000px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 50px 0;
+}
+#home>h3{
+  font-size: 30px;
+  text-indent: 70px;
+  font-weight: bold;
+}
+
+.newsList{
+  width: 1000px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+.newsList>ul{
+width: 1000px;
+padding: 100px 0;
+display: flex;
+justify-content: center;
+  flex-wrap: wrap;
+}
+.newsList>ul>li{
+width: 450px;
+line-height: 30px;
+font-size: 15px;
+
+padding: 0 5px;
+}
+
+.newsList>ul>li>a>span{
+  background-color: #999;
+  border-radius: 50%;
+  color: #fff;
+  
+}
+
+.newsListClick{
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.newsListClick>.box01{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #999;
+}
+.newsListClick>.box01>.box01Left{
+  width: 100px;
   background-color: red;
+  color: #fff;
+  line-height: 70px;
+  text-align: center;
+}
+.newsListClick>.box01>.box01Right{
+  padding: 10px 0;
+  width: 870px;
+}
+.newsListClick>.box01>.box01Right>p:first-child{
+  margin-bottom: 10px;
+}
+
+.newsListClick>.box02{
+  margin-bottom: 50px;
+  line-height: 30px;
+}
+.newsListClick>.box03{
+  text-align: center;
+  margin-bottom: 50px;
+}
+.newsListClick>.box04{
+  margin-bottom: 50px;
+  line-height: 25px;
 }
