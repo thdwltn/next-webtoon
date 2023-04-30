@@ -6,8 +6,8 @@ import { CastList } from '@/components/CastList'
 
 
 export default function Home({cast}) {
-  
   return (
+    
     <Layout>
       <Head>
         <title>Create Next App</title>
@@ -15,8 +15,8 @@ export default function Home({cast}) {
       </Head>
       <Header/>
       <main id='home'>
+       
         <h3>기다리면 무료로 시작해!</h3>
-      
         <CastList cast={cast}/>
         <h3>오늘, 웹툰가이드의 발견</h3>
        
@@ -31,7 +31,7 @@ export default function Home({cast}) {
       </main>
       <Footer/>
       </Layout>
-      
+     
   )
 }
 

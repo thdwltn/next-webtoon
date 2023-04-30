@@ -10,6 +10,7 @@ export const NewsList = ({cast}) => {
                 cast.map(news => (
                     <li key={news.slug}>
                       <Link href="/news/[id]" as={`/news/${news.slug}`}>
+                        {/* [{news.category}]&nbsp; */}
                       {news.title} &nbsp;<span><BiRightArrowAlt/></span>
                       </Link>
                     </li>

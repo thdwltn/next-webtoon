@@ -40,7 +40,7 @@ const castNews = ({castNews}) => {
                 <div className="box03">
                     <Image src={castNews.photoUrl} alt={castNews.title}
                     width={1000}
-                    height={500}/>
+                    height={700}/>
                 </div>
                 {/* box04 */}
                 <div className="box04">
